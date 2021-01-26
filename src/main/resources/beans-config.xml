@@ -18,10 +18,29 @@
         <property name="name" value="Mary" />
     </bean>
     
-    <bean id="javabc8" class="com.mycompany.springbasic1109.di.byname.Language">
+    <bean id="javabc" class="com.mycompany.springbasic1109.di.byname.Language">
         <property name="name" value="JAVA" />
     </bean>   
     <bean id="vbcd" class="com.mycompany.springbasic1109.di.byname.Language">
         <property name="name" value="VB" />
     </bean>   
+    
+    <!-- byType 自動配置 -->
+    <bean id="dept" class="com.mycompany.springbasic1109.di.bytype.Dept">
+        <property name="name" value="IT" />
+    </bean>
+    <bean id="car" class="com.mycompany.springbasic1109.di.bytype.Car">
+        <property name="name" value="BMW" />
+        <property name="price" value="2000000" />
+    </bean>
+    <bean id="car2" class="com.mycompany.springbasic1109.di.bytype.Car">
+        <property name="name" value="BENZ" />
+        <property name="price" value="2000000" />
+    </bean>
+    <bean id="emp" 
+          class="com.mycompany.springbasic1109.di.bytype.Emp"
+          autowire="byType">
+          <property name="name" value="Mark" /> 
+          <property name="motor" ref="car2" /> 
+    </bean>
 </beans>
