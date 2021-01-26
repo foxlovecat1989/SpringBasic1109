@@ -2,7 +2,7 @@ package com.mycompany.springbasic1109.di.byname;
 
 public class OracleProgrammer {
     private String name;
-    private Language java;
+    private Language javabc;
 
     public String getName() {
         return name;
@@ -12,17 +12,17 @@ public class OracleProgrammer {
         this.name = name;
     }
 
-    public Language getJava() {
-        return java;
+    public Language getJavabc() {
+        return javabc;
     }
 
-    public void setJava(Language java) {
-        this.java = java;
+    public void setJavabc(Language javabc) {
+        this.javabc = javabc;
     }
 
     @Override
     public String toString() {
-        return "OracleProgrammer{" + "name=" + name + ", java=" + java + '}';
+        return "OracleProgrammer{" + "name=" + name + ", javabc=" + javabc + '}';
     }
     
 }

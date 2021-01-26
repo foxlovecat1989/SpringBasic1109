@@ -2,7 +2,7 @@ package com.mycompany.springbasic1109.di.byname;
 
 public class MicrosoftProgrammer {
     private String name;
-    private Language vb;
+    private Language vbcd;
 
     public String getName() {
         return name;
@@ -12,17 +12,17 @@ public class MicrosoftProgrammer {
         this.name = name;
     }
 
-    public Language getVb() {
-        return vb;
+    public Language getVbcd() {
+        return vbcd;
     }
 
-    public void setVb(Language vb) {
-        this.vb = vb;
+    public void setVbcd(Language vbcd) {
+        this.vbcd = vbcd;
     }
 
     @Override
     public String toString() {
-        return "MicrosoftProgrammer{" + "name=" + name + ", vb=" + vb + '}';
+        return "MicrosoftProgrammer{" + "name=" + name + ", vbcd=" + vbcd + '}';
     }
     
 }

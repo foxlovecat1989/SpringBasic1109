@@ -33,14 +33,21 @@
         <property name="name" value="BMW" />
         <property name="price" value="2000000" />
     </bean>
-    <bean id="car2" class="com.mycompany.springbasic1109.di.bytype.Car">
-        <property name="name" value="BENZ" />
-        <property name="price" value="2000000" />
-    </bean>
     <bean id="emp" 
           class="com.mycompany.springbasic1109.di.bytype.Emp"
           autowire="byType">
           <property name="name" value="Mark" /> 
-          <property name="motor" ref="car2" /> 
+          <property name="motor" ref="car" /> 
     </bean>
+    <bean id="emp2" 
+          class="com.mycompany.springbasic1109.di.bytype.Emp"
+          autowire="constructor">
+          <property name="name" value="Jo" /> 
+    </bean>
+    <bean id="emp3" 
+          class="com.mycompany.springbasic1109.di.bytype.Emp"
+          autowire="constructor">
+          <constructor-arg name="name" value="Helen"/> 
+    </bean>
+    
 </beans>

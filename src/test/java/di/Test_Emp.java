@@ -9,9 +9,15 @@ public class Test_Emp {
     public void t1() {
         ClassPathXmlApplicationContext ctx = 
                 new ClassPathXmlApplicationContext("beans-config.xml");
+        
         // byType
         Emp emp = ctx.getBean("emp", Emp.class);
-        System.out.println(emp);
+        // System.out.println(emp);
+        // consturctor
+        Emp emp2 = ctx.getBean("emp2", Emp.class);
+        System.out.println(emp2);
+        Emp emp3 = ctx.getBean("emp3", Emp.class);
+        System.out.println(emp3);
         ctx.close();
     }
 }
